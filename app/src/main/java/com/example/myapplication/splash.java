@@ -13,12 +13,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class splash extends AppCompatActivity {
-    private static int SPLASH_SCREEN=5000;
+    private static int SPLASH_SCREEN=3000;
     //variables
     Animation topAnim;
     Animation bottomAnim;
     ImageView image;
-    TextView tx;
+    TextView quantumhunt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,10 +32,14 @@ public class splash extends AppCompatActivity {
         topAnim= AnimationUtils.loadAnimation(this,R.anim.top_animation);
         bottomAnim= AnimationUtils.loadAnimation(this,R.anim.bottom_animation);
         image=findViewById(R.id.image);
+        quantumhunt=findViewById(R.id.quantumhunt);
 
 
         image.setAnimation(topAnim);
         image.setAnimation(bottomAnim);
+
+        quantumhunt.setAnimation(topAnim);
+        quantumhunt.setAnimation(bottomAnim);
 
 
         new Handler().postDelayed(new Runnable() {
