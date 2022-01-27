@@ -75,7 +75,7 @@
         android:paddingTop="2dp"
         android:paddingEnd="2dp"
         android:paddingRight="2dp"
-        android:text="Don't have an account? Creat your account, it takes less than a minute"
+        android:text="Don't have an account? Create your account, it takes less than a minute"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
